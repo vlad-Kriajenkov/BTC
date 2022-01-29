@@ -594,7 +594,11 @@
   <script >
     function cartTelCheck(){
       if (document.client == "") {
-        console.log("ds")
+        console.log("Error")
+      }else if (document.tel == "") {
+        console.log("Error")
+      }else if (document.address == "") {
+        console.log("Error")
       }else{
         fetch('https://api.fastforex.io/fetch-one?from=USD&to=EUR&api_key=&api_key=12d16f39b0-d44edd54de-r64egt')
         .then(response => {
